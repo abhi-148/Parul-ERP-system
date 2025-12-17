@@ -1,0 +1,74 @@
+/* ================= DARK MODE ================= */
+body.dark {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* Glass cards */
+body.dark .glass {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+/* Normal cards */
+body.dark .card {
+  background: #020617;
+  color: white;
+}
+
+/* Sidebar */
+body.dark .sidebar {
+  background: #020617;
+}
+
+/* Inputs & Select */
+body.dark input,
+body.dark select {
+  background: #020617;
+  color: white;
+  border: 1px solid #334155;
+}
+
+/* Buttons */
+body.dark button {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Login / Signup background */
+body.dark .login-wrapper {
+  background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Login & Signup Card Animation */
+.login-card {
+  animation: fadeSlide 0.8s ease;
+}
+
+/* ================= LIGHT MODE DEFAULT ================= */
+body {
+  background: #f4f6fb;
+  color: #0f172a;
+}
+
+/* Smooth transition for theme change */
+body,
+.card,
+.glass,
+.sidebar,
+input,
+select {
+  transition: background 0.3s ease, color 0.3s ease;
+}
